@@ -9,4 +9,5 @@
     height: var(--size);
 
     background-image: radial-gradient(var(--color), transparent 60%);
+
 }

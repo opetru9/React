@@ -4,7 +4,7 @@ function App() {
 
   return (
     <div >
-        <Snow quantity = {5}/>
+        <Snow quantity = {15}/>
     </div>
   );
 }

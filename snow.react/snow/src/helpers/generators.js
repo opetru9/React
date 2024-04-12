@@ -13,11 +13,11 @@ const randColor = ({
         blueish  = 1
     } = {} ) => {
 
-    let red   = randInt(0,255 * reddish )
-    let blue  = randInt(0,255 * greenish)
-    let green = randInt(0,255 * blueish )
+    let red   = randInt( 0, 255 * reddish  )
+    let green = randInt( 0, 255 * greenish )
+    let blue  = randInt( 0, 255 * blueish  ) 
 
     return `rgb(${red}, ${green}, ${blue})`  
 }
 
-export {randInt, randColor}
+export { randInt, randColor };
