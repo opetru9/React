@@ -1,24 +1,44 @@
-// import {randInt, randColor} from '../helpers/generators'
-import Flake from './Flake/Flake'
-import {useState, useEffect} from 'react'
+import { randInt, randColor } from "../helpers/generators";
+import Flake from "./Flake/Flake";
+import { useState, useEffect } from "react";
 
-function Snow( { quantity } ) {
+function Snow({ quantity }) {
 
-  // flake falling using "useState()"
-  let [top, setTop] = useState(0);
-  let [flakes, setFlakes] = useState([<Flake key={ 1 } top={ top } size={50} color={'#fff'}/>])
+// 1. create an array with "quantity" * elements /* HW2 */
+  let flakesArray = [];
+  for (let i = 0; i < quantity; i++) {
+    flakesArray.push(
+      <Flake
+        key={i}
+        top={0}
+        size={50}
+        left={randInt(0, 99)}
+        color={randColor()}
+      />
+    );
+  }
 
+  let [flakes, setFlakes] = useState(flakesArray);
+  const topLimit = 90;
+
+//  using "useState" make the flakes drop and melt
   useEffect(() => {
-
     setTimeout(() => {
+      setFlakes(
 
-      if (top < 90) {
-        setTop(top + 10);
-        setFlakes([<Flake key={1} top={top} size={50} color={"#fff"} />]); /* update the Flake until top < 90 */
-      } else {
-        setFlakes([]); /* then top > 90 ,cancel the Flake from array*/
-      }
-      
+        flakes
+          .filter(( { props: {top} } ) => top < topLimit ) /*HW1 */ /* melt flakes*/
+          .map(( { props : { top, left, size, color} } , index) => ( /* HW3 */
+            <Flake
+              key   = {index}
+              top   = {top + 5} /* drop flakes*/
+              left  = {left }
+              size  = {size}
+              color = {color}
+            />
+          ))
+
+      );
     }, 500);
   });
 
@@ -27,15 +47,3 @@ function Snow( { quantity } ) {
 
 export default Snow;
 
-
-
-//   const flakeArguments = {
-//     size: randInt(20, 40),
-//     color: randColor({
-//       reddish: 0.1,
-//       greenish: 0.1,
-//       blueish: 1,
-//     }),
-//     top: 0,
-//     left: randInt(0, 100),
-//   };
