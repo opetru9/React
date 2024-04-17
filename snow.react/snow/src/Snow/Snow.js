@@ -24,7 +24,7 @@ function Snow({ quantity }) {
 
   let [flakes, setFlakes] = useState(flakesArray);
 
-  let flakesToReset = quantity - flakes.length;
+  let flakesToReset = (quantity - flakes.length);
   const topLimit = randInt(92, 99);
   
 
