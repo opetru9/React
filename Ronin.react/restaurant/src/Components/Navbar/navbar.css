@@ -1,0 +1,79 @@
+
+/* main nav */
+nav.main-navbar {
+    position: fixed;
+    top: 30px;
+    z-index: 99;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+    background-color: var(--primary-dark-coloro);
+    box-shadow: 0 5px 5px 1px rgb(48, 4, 4);
+    transition: .4s;
+}
+
+nav.main-navbar.active {
+    transition: .4s;
+    position: fixed;
+    top: 0px;
+    z-index: 99;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 70px;
+    background-color: var(--primary-dark-coloro);
+    box-shadow: 0 0 5px 1px rgb(48, 4, 4);
+}
+
+.navbar-menu-list li:last-child a {
+    white-space: nowrap;
+}
+
+nav.main-navbar .logo {
+    cursor: pointer;
+    width: 100px;
+    height: 100px;
+    background-image: url(../../img/ronin_logo.jpg);
+    background-size: cover;
+    border-radius: 100%;
+    vertical-align: middle;
+    box-shadow: 0 5px 10px 1px rgb(48, 4, 4);
+    margin-top: 29px;
+    transition: .4s;
+}
+
+nav.main-navbar .logo.active {
+    width: 67px;
+    height: 67px;
+    margin-top: 1px;
+    box-shadow: none;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+    flex: 0 1 50%;
+}
+
+nav ul li {
+    letter-spacing: 0.5px;
+    cursor: pointer;
+}
+
+nav ul li a {
+    padding: 10px 15px;
+    border-radius: 100%;
+    font-family: 'Merinda';
+}
+
+nav ul li a:hover {
+    color: var(--primary-hover-coloro);
+    transition: .5s;
+}
