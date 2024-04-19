@@ -25,7 +25,7 @@ let phildaefia = new Rolle(
 );
 
 let phildaefia2 = new Rolle(
-  "Phildaefia 2",
+  "Canada",
   250,
   "MDL",
   phildaefia_img, 
@@ -36,7 +36,7 @@ let phildaefia2 = new Rolle(
 );
 
 let phildaefia3 = new Rolle(
-  "Phildaefia 3",
+  "California",
   350,
   "MDL",
   phildaefia_img, 
@@ -47,7 +47,7 @@ let phildaefia3 = new Rolle(
 );
 
 let phildaefia4 = new Rolle(
-  "Phildaefia 4",
+  "Takara",
   450,
   "MDL",
   phildaefia_img, 

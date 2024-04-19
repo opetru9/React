@@ -1,20 +1,38 @@
 .menu{
+    padding: 15rem 0 2rem 0;
+}
+.sortBtn {
+    cursor: pointer;
+    padding: 0.7rem;
+    margin: 0.2rem;
+}
+.menu input{
+    height: 2rem;
+}
+.menu .search_comment{
+    /* border: 1px solid green; */
+    padding: 1rem ;
+    /* width: 10rem; */
+    height: 2rem;
+    margin-left: 1.2rem;
+}
+.menuList{
     padding: 0 1rem ;
 }
-.menu li {
+.menuList {
     display: flex;
     flex-direction: row;
-    padding: 8rem 0 2rem 0;
+    
 }
-.menu li>div{
+.menuList li>div{
     display: flex;
     margin: 0 0.5rem;
     align-items: center;
     flex-direction: column;
 }
-.menu li>div>*{
+.menuList li>div>*{
     margin:  0.5rem 0;
 }
-.menu img{
+.menuList img{
     width: 150px;
 }
