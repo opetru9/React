@@ -1,0 +1,16 @@
+@import '../util';
+.snake{
+
+    @include component(
+        'snake__head', 
+        (64px, 64px),
+        $head_directions
+    );
+
+    @include component(
+        'snake__tail', 
+        (64px, 64px),
+        $tail_directions
+    );
+
+}
