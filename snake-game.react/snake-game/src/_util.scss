@@ -37,7 +37,7 @@ $tail_directions: (
     .#{$name} {
         width :nth( $size, 1 ); /* take the element from position 1 into $size list*/
         height:nth( $size, 2 ); 
-        background-image: url('./snake/snake-graphics.png');
+        background-image: url('./Game/snake-graphics.png');
         background-position: -192px 0;
         }
 

@@ -1,4 +1,4 @@
-import {Component, withCoordinates, withDirection} from './helpers'
+import {Component, withCoordinates, withDirection} from '../helpers'
 import './styleSnake.scss'
 
 
