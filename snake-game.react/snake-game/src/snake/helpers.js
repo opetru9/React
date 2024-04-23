@@ -8,7 +8,7 @@ const Component = ({ name, children}) => {
 
 // Decorators:
 const withCoordinates = (Component) => {
-  return ({ top, left, ...props }) => {
+  return ({coord: {top, left} , ...props }) => {
     return (
       <div style={{ top: `${top}px`, left: `${left}px`, position: "absolute" }}>
         <Component {...props} />

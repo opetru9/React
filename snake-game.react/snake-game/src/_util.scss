@@ -5,6 +5,26 @@ $head_directions: (
     right: -256px 0
 );
 
+$body_directions: (
+    up:         -128px 192px,
+    down:       -128px 192px,
+
+    left:       -64px 0,
+    right:      -64px 0,
+
+    down-left:  192px 128px,
+    right-up:   192px 128px,
+
+    up-left:    192px 256px,
+    right-down: 192px 256px,
+
+    left-down:  0 256px,
+    up-right:   0 256px,
+
+    down-right: 0 192px,
+    left-up:    0 192px,
+);
+
 $tail_directions: (
     up: -192px 128px,
     down: -256px 64px,
