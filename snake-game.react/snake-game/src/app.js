@@ -11,7 +11,9 @@ let game = {
       name: "snake",
       children: [
         { name: "snake__head", dir: "up", coord: { top: 100, left: 200 } },
+        { name: "snake__body", dir: "up", coord: { top: 132, left: 200 } },
         { name: "snake__body", dir: "up", coord: { top: 164, left: 200 } },
+        { name: "snake__body", dir: "up", coord: { top: 196, left: 200 } },
         { name: "snake__tail", dir: "up", coord: { top: 228, left: 200 } },
       ],
     },

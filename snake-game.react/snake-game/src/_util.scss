@@ -1,54 +1,109 @@
 $head_directions: (
-    up: -192px 0,
-    down: -256px 192px,
-    left: -192px 192px,
-    right: -256px 0
+    up: -96px 0,
+    down: -128px 96px,
+    left: -96px 96px,
+    right: -128px 0
 );
 
 $body_directions: (
-    up:         -128px 192px,
-    down:       -128px 192px,
+    up: -64px 96px,
+    down: -64px 96px,
 
-    left:       -64px 0,
-    right:      -64px 0,
+    left: -32px 0,
+    right: -32px 0,
 
-    down-left:  192px 128px,
-    right-up:   192px 128px,
+    down-left: 96px 64px,
+    right-up: 96px 64px,
 
-    up-left:    192px 256px,
-    right-down: 192px 256px,
+    up-left: 96px 128px,
+    right-down: 96px 128px,
 
-    left-down:  0 256px,
-    up-right:   0 256px,
+    left-down: 0 128px,
+    up-right: 0 128px,
 
-    down-right: 0 192px,
-    left-up:    0 192px,
+    down-right: 0 96px,
+    left-up: 0 96px,
 );
 
 $tail_directions: (
-    up: -192px 128px,
-    down: -256px 64px,
-    left:  -192px 64px,
-    right: -256px 128px
+    up: -96px 64px,
+    down: -128px 32px,
+    left: -96px 32px,
+    right: -128px 64px
 );
 
-@mixin component( $name, $size, $directions ){
+@mixin component($name, $size, $directions ) {
 
     .#{$name} {
-        width :nth( $size, 1 ); /* take the element from position 1 into $size list*/
-        height:nth( $size, 2 ); 
+        width: nth($size, 1) ;
+        height: nth($size, 2) ;
         background-image: url('./Game/snake-graphics.png');
-        background-position: -192px 0;
-        }
+        background-size: 160px 128px;
+        background-position: -96px 0;
+    }
 
     .dir- {
-        @each $dir, $positions in $directions{ /* for each "key" and "value" in map*/
-            &#{ $dir } { /* will be like : &up */
-                .#{ $name } { 
+        @each $dir, $positions in $directions {
+            &#{ $dir } {
+                .#{ $name } {
                     background-position: #{ $positions };
                 }
             }
         }
     }
 }
+
+// $head_directions: (
+//     up: -192px 0,
+//     down: -256px 192px,
+//     left: -192px 192px,
+//     right: -256px 0
+// );
+
+// $body_directions: (
+//     up:         -128px 192px,
+//     down:       -128px 192px,
+
+//     left:       -64px 0,
+//     right:      -64px 0,
+
+//     down-left:  192px 128px,
+//     right-up:   192px 128px,
+
+//     up-left:    192px 256px,
+//     right-down: 192px 256px,
+
+//     left-down:  0 256px,
+//     up-right:   0 256px,
+
+//     down-right: 0 192px,
+//     left-up:    0 192px,
+// );
+
+// $tail_directions: (
+//     up: -192px 128px,
+//     down: -256px 64px,
+//     left:  -192px 64px,
+//     right: -256px 128px
+// );
+
+// @mixin component( $name, $size, $directions ){
+
+//     .#{$name} {
+//         width :nth( $size, 1 ); /* take the element from position 1 into $size list*/
+//         height:nth( $size, 2 ); 
+//         background-image: url('./Game/snake-graphics.png');
+//         background-position: -192px 0;
+//         }
+
+//     .dir- {
+//         @each $dir, $positions in $directions{ /* for each "key" and "value" in map*/
+//             &#{ $dir } { /* will be like : &up */
+//                 .#{ $name } { 
+//                     background-position: #{ $positions };
+//                 }
+//             }
+//         }
+//     }
+// }
 

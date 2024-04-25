@@ -3,19 +3,19 @@
 
     @include component(
         'snake__head', 
-        (64px, 64px),
+        (32px, 32px),
         $head_directions
     );
 
     @include component(
         'snake__body', 
-        (64px, 64px),
+        (32px, 32px),
         $body_directions
     );
 
     @include component(
         'snake__tail', 
-        (64px, 64px),
+        (32px, 32px),
         $tail_directions
     );
 
