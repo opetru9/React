@@ -1,11 +1,13 @@
 
 function gameOver(){
   alert('Game Over')
+  window.location.reload();
 }
 function renderScore(score){
   let scoreElement = document.querySelector('.score')
   scoreElement.innerText = `Score: ${score}`
 }
+
 
 function generateRandomCoord() {
   // Get the window dimensions
@@ -24,13 +26,13 @@ function generateRandomCoord() {
   const finalWidth = (Math.floor(randomWidth / 32) * 32) +32;
   const finalHeight = (Math.floor(randomHeight / 32) * 32 +32);
 
-  // Return the generated final number
-  return {
-    width: finalWidth,
-    height: finalHeight,
-    maxWidth: maxWidth,
-    maxHeight: maxHeight,
-  };
+    // Return the generated final number
+    return {
+      width: finalWidth,
+      height: finalHeight,
+      maxWidth: maxWidth,
+      maxHeight: maxHeight,
+    };
 }
 //  ------------------ Main Components with random coords array: ---------------------
 let game = {
@@ -42,9 +44,7 @@ let game = {
       children: [
         { name: "snake__head", dir: "up", coord: { top: 192, left: 192 } },
         { name: "snake__body", dir: "up", coord: { top: 224, left: 192 } },
-        { name: "snake__body", dir: "up", coord: { top: 256, left: 192 } },
-        { name: "snake__body", dir: "up", coord: { top: 288, left: 192 } },
-        { name: "snake__tail", dir: "up", coord: { top: 320, left: 192 } },
+        { name: "snake__tail", dir: "up", coord: { top: 256, left: 192 } },
       ],
     },
     {
@@ -82,6 +82,19 @@ let game = {
   ],
 };
 
+function findExistentCoords(array){
+    let noSnakeElements = array.children.filter( child => child.name !== 'snake')
+
+    let coordsArray = []
+
+    noSnakeElements.forEach( child =>
+      coordsArray.push(child.coord) 
+    )    
+  
+    return coordsArray
+}
+
+
 
 // ----------------- Create Components Helpers: ------------------------------
 // common Components
@@ -110,4 +123,13 @@ const withDirection = (Component) => {
   };
 };
 
-export { Component, withCoordinates, withDirection, generateRandomCoord, game, gameOver, renderScore };
+export {
+  Component,
+  withCoordinates,
+  withDirection,
+  generateRandomCoord,
+  game,
+  gameOver,
+  renderScore,
+  findExistentCoords,
+};
