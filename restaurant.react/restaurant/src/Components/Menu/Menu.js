@@ -1,30 +1,26 @@
 import Item from '../Item/Item';
 import { useState, useRef } from "react";
-
 import './menu.css'
 
 const Menu = ({data}) => {
 
     let [searchText, setSearchText]        = useState("");
-    let [incPirce, setIncPrice]            = useState(true)
-    let [productsArrray, setProductsArray] = useState(data);   
+    let [incPrice, setIncPrice]            = useState(true)
+    let [productsArray, setProductsArray] = useState(data);   
     const searchCommentRef = useRef(null);
     
     function sortToggle() {
 
-        setIncPrice(!incPirce)
+        setIncPrice(!incPrice)
         
-        const sortedArray = [...productsArrray].sort((a, b) =>
-            incPirce ?  b.price - a.price : a.price - b.price 
+        const sortedArray = [...productsArray].sort((a, b) =>
+            incPrice ?  b.price - a.price : a.price - b.price 
         )
 
         setProductsArray(sortedArray);       
     }
 
     function searchHandler(event){
-
-        // let currentProducts = [...productsArrray]
-        // console.log(currentProducts);
 
         let inputText = event.target.value.toLowerCase()
         setSearchText(inputText);
@@ -45,15 +41,13 @@ const Menu = ({data}) => {
             setProductsArray(data);
             setIncPrice(true)
         }  
-        
     }
 
-    
-
+  
     return (
       <div className="menu">
         <button className="sortBtn" onClick={sortToggle}>      
-          {incPirce ? "^" : "v"}
+          {incPrice ? "^" : "v"}
         </button>
 
         <input type="text" onChange={searchHandler}></input>
@@ -61,7 +55,7 @@ const Menu = ({data}) => {
         <div ref={searchCommentRef} className="search_comment"></div>
 
         <ul className="menuList">
-          {productsArrray.map((product) => (
+          {productsArray.map((product) => (
             <Item data={product} key={product.id} />
           ))}
         </ul>

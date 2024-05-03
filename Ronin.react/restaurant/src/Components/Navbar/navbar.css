@@ -12,11 +12,11 @@ nav.main-navbar {
     height: 80px;
     background-color: var(--primary-dark-coloro);
     box-shadow: 0 5px 5px 1px rgb(48, 4, 4);
-    transition: .4s;
+    transition: .3s;
 }
 
 nav.main-navbar.active {
-    transition: .4s;
+    transition: .3s;
     position: fixed;
     top: 0px;
     z-index: 99;
@@ -76,4 +76,135 @@ nav ul li a {
 nav ul li a:hover {
     color: var(--primary-hover-coloro);
     transition: .5s;
+}
+
+/* burger menu */
+.off-screen-menu {
+    background-color: var(--primary-dark-coloro);
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    right: 100%;
+    display: flex;
+    z-index: 100;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 2rem;
+    transform: .3 ease;
+    font-family: 'Merinda';
+}
+
+.off-screen-menu.active {
+    right: 0;
+}
+
+.osm-list {
+    position: relative;
+    top: 60px;
+}
+
+.osm-list li a:hover {
+    color: var(--primary-hover-coloro);
+    transition: .5s;
+}
+
+.osm-list li span {
+    color: rgb(159, 75, 75);
+    font-size: 1rem;
+    line-height: 3rem;
+    cursor: default;
+}
+
+.ham-menu {
+    height: 50px;
+    width: 35px;
+    position: fixed;
+    top: 30px;
+    right: 31px;
+    display: none;
+    z-index: 101;
+    transition: .4s;
+    cursor: pointer;
+}
+
+.ham-menu.active {
+    top: 8px;
+}
+
+.ham-menu.scroll {
+    top: 8px;
+}
+
+@media(max-width: 900px) {
+    .ham-menu.scroll {
+        display: inline-block;
+    }
+}
+
+.ham-menu.active span {
+    background-color: var(--red-color);
+}
+
+.ham-menu span {
+    height: 5px;
+    width: 35px;
+    background-color: var(--primary-light-coloro);
+    border-radius: 25px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: .3s ease;
+}
+
+.ham-menu span:nth-child(1) {
+    top: 25%;
+}
+
+.ham-menu span:nth-child(3) {
+    top: 75%;
+}
+
+.ham-menu.active span:nth-child(1) {
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.ham-menu.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.ham-menu.active span:nth-child(3) {
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+@media(max-width: 900px) {
+    header nav {
+        justify-content: center;
+    }
+
+    .navbar-menu-list {
+        display: none;
+    }
+
+    .off-screen-menu {
+        display: inline-block;
+    }
+
+    .ham-menu {
+        display: inline-block;
+        right: 10px;
+        top: 40px;
+    }
+}
+
+@media(max-width: 500px) {
+    .ham-menu {
+        right: 10px;
+        top: 40px;
+    }
 }

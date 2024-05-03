@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
-import reportWebVitals from './reportWebVitals';
 import Header from './Layers/Header';
 import Main from './Layers/Main/Main';
 import Footer from './Layers/Footer/Footer';
@@ -18,4 +17,3 @@ root.render(
 );
 
 
-reportWebVitals();
