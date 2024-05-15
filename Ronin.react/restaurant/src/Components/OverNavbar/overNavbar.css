@@ -3,10 +3,12 @@
     width: 100%;
     background-color: var(--red-color);
     height: 30px;
+    position: relative;
+    z-index: 100;
 }
 
 .over-nav__wrapper {
-    max-width: 1270px;
+    max-width: 1250px;
     margin: 0 auto;
 }
 
@@ -23,9 +25,8 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.social img {
-    width: 25px;
-    margin-left: 31px;
+.social a svg {
+    color: #000;
 }
 
 @media (max-width:900px) {
