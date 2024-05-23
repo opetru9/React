@@ -1,15 +1,18 @@
 import SlickSection from '../../Components/SlickSection/SlikSection';
-import './main.css'
+import bauturiProducts from '../../Products/Bauturi';
 import rolleProducts from "../../Products/Rolle";
+import seturiProducts from '../../Products/Seturi';
 import tempuraProducts from '../../Products/Tempura';
 
-const Main = () => {
+const MainHome = () => {
     return ( 
         <main>
             <SlickSection name={'rolle'} products={rolleProducts}/>
             <SlickSection name={'tempura'} products={tempuraProducts}/>
+            <SlickSection name={'seturi'} products={seturiProducts}/>
+            <SlickSection name={'bauturi'} products={bauturiProducts}/>
         </main>
      );
 }
  
-export default Main;
+export default MainHome;

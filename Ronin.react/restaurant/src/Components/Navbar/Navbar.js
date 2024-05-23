@@ -2,7 +2,7 @@ import {useState, useEffect} from "react";
 import {useTheme, AppBar,Box,Toolbar,IconButton,Typography,Container,Link,Drawer,List} from "@mui/material";
 import MenuIcon  from "@mui/icons-material/Menu";
 import "./navbar.css"
-const pages = ['ROLLE','TEMPURA','SETURI','SALATE','BAUTURI','DESPRE NOI']
+const pages = ['rolle','tempura','seturi','bauturi','despre-noi']
 const symbols = ['𪜨','𪜢','𪜸','𪜺','𪜻']
 
 
@@ -35,7 +35,7 @@ const Navbar = () => {
       <List >
         {pages.map((page, i) => (
           <li key={page}>
-            <a href="##" key={page} style={{ margin: 2, display: "block", fontFamily: "Merienda" }}>
+            <a href={`/category=${page}`} key={page} style={{ margin: 2, display: "block", fontFamily: "Merienda", textTransform:'uppercase' }}>
               {page}
             </a>
             <span> {symbols[i]}</span>
@@ -64,9 +64,9 @@ const Navbar = () => {
           >
             <Typography
               component={Link}
-              href="index.html"
+              href="/"
               className={onTop ? "logo " : "logo active"}
-              sx={{ ml: { xs: "48px" } }}
+              sx={{ ml: { xs: "62px" } }}
             ></Typography>
           </Box>
 
@@ -81,13 +81,14 @@ const Navbar = () => {
               {pages.map((page) => (
                 <li key={page}>
                   <Link
-                    href="##"
+                    href={`/category=${page}`}
                     underline="none"
                     sx={{
                       m: 2,
                       display: "block",
                       color: { color: theme.palette.mainLightColor },
                       "&:hover": { color: theme.palette.hoverColor },
+                      textTransform:'uppercase'
                     }}
                   >
                     {page}

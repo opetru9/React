@@ -1,12 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
-import Header from './Layers/Header';
-import Main from './Layers/Main/Main';
-import Footer from './Layers/Footer/Footer';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 // import Merinda from './fonts/Merienda/Merienda-VariableFont_wght.woff2'
 // import Raleway from './fonts/Raleway/Raleway-Light.woff2'
+
 
 const theme = createTheme({
   palette: {
@@ -37,6 +35,9 @@ const theme = createTheme({
     h5: {
       fontFamily: "Raleway", 
     },
+    h6: {
+      fontFamily: "Raleway", 
+    },
     body1: {
       fontFamily: "Raleway", 
     },
@@ -59,13 +60,9 @@ const theme = createTheme({
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-     <ThemeProvider theme={theme}>
-    <App >
-      <Header/>
-      <Main/>
-      <Footer/>
-    </App >
-    </ThemeProvider>
+      <ThemeProvider theme={theme}>
+        <App/>
+      </ThemeProvider>
   </React.StrictMode>
 );
 

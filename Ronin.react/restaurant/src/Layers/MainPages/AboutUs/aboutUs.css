@@ -1,0 +1,47 @@
+.slider-container{
+    margin-bottom: 50px;
+}
+.slider-container div img{
+    width: 100%;
+}
+.description{
+    margin-bottom:100px;
+}
+.slick-arrow{
+    opacity: 0;
+}
+.slider-container:hover .slick-arrow {
+    opacity: 1;
+    transition: .8s;
+}
+/* .aboutUs__main-carousel {
+    margin-top: 40px;
+
+    .container {
+        max-width: 800px;
+        margin: 0 auto;
+
+        .slider {
+
+            .slider_item {
+                width: 100%;
+                height: 500px;
+
+                @media(max-width: 800px) {
+                    height: 100%;
+                }
+
+                img {
+                    width: 100%;
+                    // height: 80vh;
+                }
+            }
+
+            .slick-arrow {
+                display: none;
+            }
+        }
+
+    }
+
+} */

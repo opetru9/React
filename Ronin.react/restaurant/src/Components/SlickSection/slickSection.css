@@ -1,56 +1,34 @@
+
+/* ------------ */
+
 /* carousel style */
-section.section-carousel{
+section.section-carousel {
     height: 350px;
-}
-.container {
-    max-width: 1200px;
-    margin: 0px auto;
+    margin-bottom: 20px;
 }
 
 @media (max-width:900px) {
-    .container {
-        height: 330px;
-    }
-}
-
-@media (max-width:450px) {
-    .container {
-        height: 300px;
-    }
-}
-
-.title-container {
-    margin: 30px 31px;
-    border-top: 1px solid var(--primary-light-coloro);
-}
-
-@media (max-width:900px) {
-    .title-container {
-        margin: 30px 27px;
+    section.section-carousel {
+        margin-bottom: 10px;
     }
 }
 
 @media (max-width:600px) {
-    .title-container {
-        margin: 30px 30px;
+    section.section-carousel {
+        margin-bottom: 0px;
     }
 }
 
-@media (max-width:500px) {
-    .title-container {
-        margin: 30px 21px;
-    }
+.section-carousel {
+    overflow: hidden;
 }
 
-.section-title {
-    font-family: var(--base-font-famyli);
-    color: var(--red-color);
-    display: inline-block;
-    background-color: #222;
-    position: relative;
-    top: -14px;
-    padding-right: 10px;
-    text-transform: capitalize;
+.section-carousel .css-6bbpix-MuiDivider-root::after {
+    border-top: thin solid var(--primary-light-coloro);
+}
+
+.section-carousel .css-6bbpix-MuiDivider-root::before {
+    border-top: thin solid var(--primary-light-coloro);
 }
 
 /*/*/
@@ -64,7 +42,36 @@ section.rolle-carousel {
     }
 }
 
-.section-carousel {
-    overflow: hidden;
+/*  */
+section.bauturi-carousel .slider_item {
+    height: 208px;
 }
 
+section.bauturi-carousel .slider_item a {
+    max-height: 170px;
+    width: 170px;
+}
+/*  */
+.title-container {
+    margin: 30px 0px 20px 0;
+    border-top: 1px solid var(--primary-light-coloro);
+}
+
+
+@media (max-width:600px) {
+    .title-container {
+        margin: 20px 0px 10px 0;
+        font-size: 24px;
+    }
+}
+
+.section-title {
+    font-family: var(--base-font-famyli);
+    color: var(--red-color);
+    display: inline-block;
+    background-color: #222;
+    position: relative;
+    top: -24px;
+    padding-right: 10px;
+    text-transform: capitalize;
+}

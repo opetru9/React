@@ -47,13 +47,9 @@ body {
   --red-color:rgb(159, 75, 75);
 }
 
-/* div#root{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    position: relative;
-    height: inherit;
-} */
+main {
+    margin-top: 160px;
+}
 
 .back-on-top{
     display: none;

@@ -1,26 +1,39 @@
 import OpenData from './overNavComponents/OpenData';
 import OrderData from './overNavComponents/OrderData';
-import './overNavbar.css'
-import { Link } from "@mui/material";
+import { Link,Box,Container,Grid,useTheme } from "@mui/material";
 import InstagramIcon from "@mui/icons-material/Instagram";
+import './overNavbar.css'
 
 const OverNavbar = () => {
+  const theme = useTheme();
     return (
-      <div className="over-nav">
-        <div className="over-nav__wrapper">
-          <div className="content">
-            <div className="social">
-              <Link href="##">
-                <InstagramIcon
-                  fontSize="medium"
-                />
-              </Link>
-            </div>
-            <OrderData />
-            <OpenData />
-          </div>
-        </div>
-      </div>
+      <Box sx={{ backgroundColor: theme.palette.redColor, color: "#111" ,height:'30px' }}>
+        <Container maxWidth="lg" >
+          <Grid
+            container
+            sx={{ justifyContent: "space-between", alignItems: "center",height:'30px' }}
+          >
+          <Grid item>
+            <Link
+              href="##"
+              sx={{
+                textDecoration: "none",
+                color: "inherit",
+                "&:hover": { color: '#eee' },
+              }}
+            >
+              <InstagramIcon fontSize="medium" color="primary" />
+            </Link>
+          </Grid>
+            <Grid item>
+              <OrderData />
+            </Grid>
+            <Grid item>
+              <OpenData />
+            </Grid>
+          </Grid>
+        </Container>
+      </Box>
     );
 }
  

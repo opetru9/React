@@ -1,4 +1,15 @@
-/* over nav */
+header a svg.MuiSvgIcon-root{
+    color: #111;
+}
+header div.MuiGrid-root.MuiGrid-container .MuiLink-root {
+    color: #111;
+}
+header div.MuiGrid-root.MuiGrid-container .MuiLink-root:hover {
+    color: var(--primary-hover-coloro);
+    transition: .5s;
+}
+
+/* over nav
 .over-nav {
     width: 100%;
     background-color: var(--red-color);
@@ -88,4 +99,4 @@
     .open {
         margin-right: 6px;
     }
-}
+} */

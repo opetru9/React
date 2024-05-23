@@ -1,19 +1,19 @@
 import SlickSlider from '../SlickSlider/SlickSlider';
+import { Container, Divider,Typography,useTheme } from "@mui/material";
 import './slickSection.css'
 
 
 const SlickSection = ({name, products}) => {
+  const theme = useTheme()
     return (
       <section className={`${name}-carousel section-carousel`}>
-        <div className="container">
+        <Container maxWidth='lg'>
+          <Divider textAlign="left" sx={{ marginBottom:'35px' }}>
+            <Typography variant="h5" sx={{fontFamily:'Merienda',textTransform:'uppercase',color: theme.palette.redColor}}>{name}</Typography>
+          </Divider>
 
-          <div className="title-container">
-            <h2 className="section-title">{`${name}`}</h2>
-          </div>
-
-          <SlickSlider data={products}/>
-
-        </div>
+          <SlickSlider data={products} />
+        </Container>
       </section>
     );
 }

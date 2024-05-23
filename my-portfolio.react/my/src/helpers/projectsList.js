@@ -24,7 +24,7 @@ const projectsList = [
     description:
       "I've developed a comprehensive informational website for an existing sushi bar restaurant. The project is set to be completed with real data and deployed on the web soon. The website provides visitors with the most relevant information about the restaurant, including its menu, location, opening hours, and contact details. Product rendering is handled dynamically through JavaScript logic, while the HTML structure primarily consists of the navbar and footer elements to ensure a consistent layout across all pages",
     img: sushi,
-    gitHubLink: "https://github.com/opetru9/Ronin/",
+    gitHubLink: "https://github.com/opetru9/ronin-sushi-restaurant",
     id: 1,
   },
   {
