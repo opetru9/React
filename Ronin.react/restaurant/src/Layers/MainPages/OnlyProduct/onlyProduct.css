@@ -1,3 +1,13 @@
+
 main.onlyProduct__main .section-carousel {
     margin: 50px 0 50px 0;
+}
+main.onlyProduct__main .bauturi-img {
+    width: 250px;
+}
+main.onlyProduct__main .bauturi-gridItem {
+    text-align: center;
+}
+main.onlyProduct__main .bauturi-ingredients {
+    display: none;
 }

@@ -25,7 +25,7 @@ const Footer = () => {
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2729.871800326917!2d28.58916487490065!3d46.82652554152133!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c987f0296a9535%3A0x5f6840db735f77d6!2sRonin%20Sushi!5e0!3m2!1sro!2s!4v1708004328623!5m2!1sro!2s"
             height={250}
             width={"100%"}
-            style={{ border: "0" }}
+            style={{ border: "0", marginTop: "3px" }}
             allowFullScreen
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
@@ -46,27 +46,22 @@ const Footer = () => {
             </Typography>
             <List>
               <ListItem>
-                <Link href="##" underline="none">
+                <Link href="/category=rolle" underline="none">
                   Rolle
                 </Link>
               </ListItem>
               <ListItem>
-                <Link href="##" underline="none">
+                <Link href="/category=tempura" underline="none">
                   Tempura
                 </Link>
               </ListItem>
               <ListItem>
-                <Link href="##" underline="none">
+                <Link href="/category=seturi" underline="none">
                   Seturi
                 </Link>
               </ListItem>
               <ListItem>
-                <Link href="##" underline="none">
-                  Salate
-                </Link>
-              </ListItem>
-              <ListItem>
-                <Link href="##" underline="none">
+                <Link href="/category=bauturi" underline="none">
                   Bauturi
                 </Link>
               </ListItem>
@@ -78,7 +73,7 @@ const Footer = () => {
             </Typography>
             <List>
               <ListItem>
-                <Link href="##" underline="none">
+                <Link href="/category=despre-noi" underline="none">
                   Despre noi
                 </Link>
               </ListItem>
@@ -148,7 +143,11 @@ const Footer = () => {
             </Typography>
           </Grid>
           <Grid item>
-            <Link href="##">
+            <Link
+              href="https://www.instagram.com/ronin_sushi_official/"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
               <InstagramIcon fontSize="medium" sx={{ paddingBottom: "5px" }} />
             </Link>
           </Grid>

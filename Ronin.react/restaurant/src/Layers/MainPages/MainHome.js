@@ -7,10 +7,10 @@ import tempuraProducts from '../../Products/Tempura';
 const MainHome = () => {
     return ( 
         <main>
-            <SlickSection name={'rolle'} products={rolleProducts}/>
-            <SlickSection name={'tempura'} products={tempuraProducts}/>
-            <SlickSection name={'seturi'} products={seturiProducts}/>
-            <SlickSection name={'bauturi'} products={bauturiProducts}/>
+            <SlickSection name={'rolle'} products={rolleProducts} category={'rolle'}/>
+            <SlickSection name={'tempura'} products={tempuraProducts} category={'tempura'}/>
+            <SlickSection name={'seturi'} products={seturiProducts} category={'seturi'}/>
+            <SlickSection name={'bauturi'} products={bauturiProducts} category={'bauturi'}/>
         </main>
      );
 }

@@ -1,6 +1,4 @@
 
-/* ------------ */
-
 /* carousel style */
 section.section-carousel {
     height: 350px;
@@ -31,27 +29,6 @@ section.section-carousel {
     border-top: thin solid var(--primary-light-coloro);
 }
 
-/*/*/
-section.rolle-carousel {
-    margin-top: 140px;
-}
-
-@media (max-width:900px) {
-    section.rolle-carousel {
-        margin-top: 120px;
-    }
-}
-
-/*  */
-section.bauturi-carousel .slider_item {
-    height: 208px;
-}
-
-section.bauturi-carousel .slider_item a {
-    max-height: 170px;
-    width: 170px;
-}
-/*  */
 .title-container {
     margin: 30px 0px 20px 0;
     border-top: 1px solid var(--primary-light-coloro);

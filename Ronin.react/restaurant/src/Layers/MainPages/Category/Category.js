@@ -35,7 +35,7 @@ const Category = ( {products} ) => {
         <Grid container spacing={4}>
           {products.map((product) => (
             <Grid item key={product.name} xs={6}  md={4} className={`${product.category}_wraper`}>
-              <Link href="##" underline="none">
+              <Link href={`/product/${product.category}/${product.id}`} underline="none">
                 <Box sx={{textAlign:'center'}} >
                   <Box
                     component="img"

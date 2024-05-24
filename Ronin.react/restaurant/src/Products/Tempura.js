@@ -9,7 +9,7 @@ const tempuraProducts = [
       "Orez, nori, castraveti, avocado, creveti,tobiko, tamago, maioneza japoneza.",
     id: 21,
     category: "tempura",
-    weight: 100,
+    weight: '100g',
   },
   {
     name: "Tempura 2",
@@ -20,7 +20,7 @@ const tempuraProducts = [
       "Orez, nori, castraveti, avocado, creveti,tobiko, tamago, maioneza japoneza.",
     id: 22,
     category: "tempura",
-    weight: 200,
+    weight: '200g',
   },
   {
     name: "Tempura 3",
@@ -31,7 +31,7 @@ const tempuraProducts = [
       "Orez, nori, castraveti, avocado, creveti,tobiko, tamago, maioneza japoneza.",
     id: 23,
     category: "tempura",
-    weight: 300,
+    weight: '300g',
   },
   {
     name: "Tempura 4",
@@ -42,7 +42,7 @@ const tempuraProducts = [
       "Orez, nori, castraveti, avocado, creveti,tobiko, tamago, maioneza japoneza.",
     id: 24,
     category: "tempura",
-    weight: 400,
+    weight: '400g',
   },
   {
     name: "Tempura 5",
@@ -53,7 +53,7 @@ const tempuraProducts = [
       "Orez, nori, castraveti, avocado, creveti,tobiko, tamago, maioneza japoneza.",
     id: 25,
     category: "tempura",
-    weight: 500,
+    weight: '500g',
   },
   {
     name: "Tempura 6",
@@ -64,7 +64,7 @@ const tempuraProducts = [
       "Orez, nori, castraveti, avocado, creveti,tobiko, tamago, maioneza japoneza.",
     id: 26,
     category: "tempura",
-    weight: 600,
+    weight: '600g',
   },
   {
     name: "Tempura 7",
@@ -75,7 +75,7 @@ const tempuraProducts = [
       "Orez, nori, castraveti, avocado, creveti,tobiko, tamago, maioneza japoneza.",
     id: 27,
     category: "tempura",
-    weight: 700,
+    weight: '700g',
   },
 ];
 

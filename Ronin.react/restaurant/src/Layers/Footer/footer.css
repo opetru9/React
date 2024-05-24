@@ -7,7 +7,7 @@ footer.footer div.MuiStack-root{
     flex: 1 1 100%;
 }
 
-svg.MuiSvgIcon-root{
+footer.footer svg.MuiSvgIcon-root{
     margin:0 8px;
     color: rgb(71, 213, 213);
 }

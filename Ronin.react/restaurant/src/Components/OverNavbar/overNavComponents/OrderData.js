@@ -20,8 +20,10 @@ const OrderData = () => {
     });
   }, [largeDisplay]);
 
+
+
   return (
-    <div className="order-data">
+    <div>
       {largeDisplay ? <FullContent /> : <FewContent />}
     </div>
   );
@@ -31,20 +33,41 @@ function FullContent() {
   return (
     <span>
       Comanda acum:
-      <b>
-        <Link underline='none' href="tel:+37360011911"> +060011911</Link> /
-        <Link underline='none' href="tel:+37369184145"> +069184145</Link>
-      </b>
+      <Numbers/>
     </span>
   );
 }
 function FewContent() {
   return (
-    <b>
-      <Link underline='none' href="tel:+37360011911">+060011911</Link> /
-      <Link underline='none' href="tel:+37369184145">+069184145</Link>
-    </b>
+    <Numbers/>
   );
+}
+
+function Numbers(){
+  return(
+  <b>
+    <Link underline='none' href="tel:+37360011911" sx={{
+                    position:'relative',
+                    zIndex:'100',
+                    transition:'.5s',
+                    color: "#111",
+                    paddingLeft:'3px',
+                    "&:hover": { color: "#eee" },
+                  }}>
+          +060011911
+      </Link> /
+      <Link underline='none' href="tel:+37369184145" sx={{
+                    position:'relative',
+                    zIndex:'100',
+                    transition:'.5s',
+                    color: "#111",
+                    paddingLeft:'3px',
+                    "&:hover": { color: "#eee" },
+                  }}>
+          +069184145
+      </Link>
+  </b>
+  )
 }
 
 export default OrderData;

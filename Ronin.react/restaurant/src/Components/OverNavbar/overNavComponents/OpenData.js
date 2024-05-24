@@ -21,7 +21,7 @@ const OpenData = () => {
   }, [largeDisplay]);
 
   return (
-    <div className="open">
+    <div >
       {largeDisplay ? <FullContent /> : <FewContent />}
     </div>
   );

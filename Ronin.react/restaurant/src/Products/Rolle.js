@@ -9,7 +9,7 @@ const rolleProducts = [
       "Orez, nori, castraveti, avocado, creveti,tobiko, tamago, maioneza japoneza.",
     id: 0,
     category: "rolle",
-    weight: 300,
+    weight: '300g',
   },
   {
     name: "Phildaefia 2",
@@ -20,7 +20,7 @@ const rolleProducts = [
       "Orez, nori, castraveti, avocado, creveti,tobiko, tamago, maioneza japoneza.",
     id: 1,
     category: "rolle",
-    weight: 100,
+    weight: '100g',
   },
   {
     name: "Phildaefia 3",
@@ -31,7 +31,7 @@ const rolleProducts = [
       "Orez, nori, castraveti, avocado, creveti,tobiko, tamago, maioneza japoneza.",
     id: 2,
     category: "rolle",
-    weight: 200,
+    weight: '200g',
   },
   {
     name: "Phildaefia 4",
@@ -42,7 +42,7 @@ const rolleProducts = [
       "Orez, nori, castraveti, avocado, creveti,tobiko, tamago, maioneza japoneza.",
     id: 3,
     category: "rolle",
-    weight: 300,
+    weight: '300g',
   },
   {
     name: "Phildaefia 5",
@@ -53,7 +53,7 @@ const rolleProducts = [
       "Orez, nori, castraveti, avocado, creveti,tobiko, tamago, maioneza japoneza.",
     id: 4,
     category: "rolle",
-    weight: 400,
+    weight: '400g',
   },
   {
     name: "Phildaefia 6",
@@ -64,7 +64,7 @@ const rolleProducts = [
       "Orez, nori, castraveti, avocado, creveti,tobiko, tamago, maioneza japoneza.",
     id: 5,
     category: "rolle",
-    weight: 500,
+    weight: '500g',
   },
   {
     name: "Phildaefia 7",
@@ -75,7 +75,7 @@ const rolleProducts = [
       "Orez, nori, castraveti, avocado, creveti,tobiko, tamago, maioneza japoneza.",
     id: 6,
     category: "rolle",
-    weight: 600,
+    weight: '600g',
   },
 ];
 
