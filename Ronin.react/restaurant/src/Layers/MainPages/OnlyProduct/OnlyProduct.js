@@ -178,7 +178,7 @@ const OnlyProduct = () => {
                       </Typography>
 
                       {thisProduct.category === "seturi" ? (
-                        <Box sx={{margin:'10px 0'}}>
+                        <Box sx={{ margin: "10px 0" }}>
                           {thisProduct.ingredients.map((item, index) => (
                             <Typography key={index} variant="body1">
                               {item}
@@ -186,7 +186,7 @@ const OnlyProduct = () => {
                           ))}
                         </Box>
                       ) : (
-                        <Typography variant="body1" component={'span'}>
+                        <Typography variant="body1" component={"span"}>
                           {thisProduct.ingredients}
                         </Typography>
                       )}
@@ -196,7 +196,7 @@ const OnlyProduct = () => {
                         Categorie:{" "}
                       </Typography>
                       <Link
-                        href="##"
+                        href={`/category=${thisProduct.category}`}
                         underline="none"
                         sx={{
                           color: onlyProductTheme.palette.redColor,
