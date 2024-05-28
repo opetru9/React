@@ -16,15 +16,17 @@ const projectsList = [
     img: brochure,
     gitHubLink:
       "https://github.com/opetru9/Random-projects/tree/main/relvise-website",
+    demoLink: "http://staticrelvise.s3-website.eu-west-3.amazonaws.com/",
     id: 0,
   },
   {
     title: " Sushi-bar ",
-    skills: "React, JS, Node.js, HTML, CSS, SCSS",
+    skills: "React, JS, MUI, Node.js, HTML, CSS, SCSS",
     description:
-      "I've developed a comprehensive informational website for an existing sushi bar restaurant. The project is set to be completed with real data and deployed on the web soon. The website provides visitors with the most relevant information about the restaurant, including its menu, location, opening hours, and contact details. Product rendering is handled dynamically through JavaScript logic, while the HTML structure primarily consists of the navbar and footer elements to ensure a consistent layout across all pages",
+      "I've developed a comprehensive informational website for an existing sushi bar restaurant using Material-UI for the user interface components. The project is set to be completed with real data and deployed on the web soon. The website provides visitors with the most relevant information about the restaurant, including its menu, location, opening hours, and contact details. Product rendering is handled dynamically through JavaScript logic, while the HTML structure primarily consists of the navbar and footer elements to ensure a consistent layout across all pages. Material-UI has been instrumental in creating a visually appealing and user-friendly interface.",
     img: sushi,
     gitHubLink: "https://github.com/opetru9/ronin-sushi-restaurant",
+    demoLink: "http://staticronin.s3-website.eu-west-3.amazonaws.com/",
     id: 1,
   },
   {
@@ -35,6 +37,7 @@ const projectsList = [
     img: forest,
     gitHubLink:
       "https://github.com/opetru9/Random-projects/tree/main/parallax-3d-Forest",
+    demoLink: "http://staticforest.s3-website.eu-west-3.amazonaws.com/",
     id: 2,
   },
   {
@@ -45,6 +48,7 @@ const projectsList = [
     img: snake,
     gitHubLink:
       "https://github.com/opetru9/react/tree/main/snake-game.react/snake-game",
+    demoLink: "http://staticsnake.s3-website.eu-west-3.amazonaws.com/",
     id: 3,
   },
   {
@@ -55,6 +59,7 @@ const projectsList = [
     img: notes,
     gitHubLink:
       "https://github.com/opetru9/Random-projects/tree/main/notes%20with%20array.js",
+    demoLink: "http://staticnotes.s3-website.eu-west-3.amazonaws.com/",
     id: 4,
   },
   {
@@ -65,6 +70,7 @@ const projectsList = [
     img: sea_battle,
     gitHubLink:
       "https://github.com/opetru9/JavaScript_Advanced/tree/main/sea-battle-game.js-advanced",
+    demoLink: "http://staticsea.s3-website.eu-west-3.amazonaws.com/",
     id: 5,
   },
   {
@@ -84,6 +90,7 @@ const projectsList = [
     img: weather,
     gitHubLink:
       "https://github.com/opetru9/JavaScript_Advanced/tree/main/API-ajax-fetch-promises.js/AJAX/get-weather.ajax.js",
+    demoLink: "http://staticweatherr.s3-website.eu-west-3.amazonaws.com/",
     id: 7,
   },
 ];
