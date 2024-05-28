@@ -14,6 +14,7 @@ import tempuraProducts from "../../../Products/Tempura";
 import seturiProducts from "../../../Products/Seturi";
 import bauturiProducts from "../../../Products/Bauturi";
 import "./onlyProduct.css";
+import BackOnTop from "../../../Components/BackOnTop/BackOnTop";
 
 const OnlyProduct = () => {
   const {category} = useParams()
@@ -224,6 +225,7 @@ const OnlyProduct = () => {
             </Container>
           </section>
         </ThemeProvider>
+        <BackOnTop />
       </main>
     );
 };

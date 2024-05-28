@@ -1,3 +1,4 @@
+import BackOnTop from '../../Components/BackOnTop/BackOnTop';
 import SlickSection from '../../Components/SlickSection/SlikSection';
 import bauturiProducts from '../../Products/Bauturi';
 import rolleProducts from "../../Products/Rolle";
@@ -11,6 +12,7 @@ const MainHome = () => {
             <SlickSection name={'tempura'} products={tempuraProducts} category={'tempura'}/>
             <SlickSection name={'seturi'} products={seturiProducts} category={'seturi'}/>
             <SlickSection name={'bauturi'} products={bauturiProducts} category={'bauturi'}/>
+            <BackOnTop/>
         </main>
      );
 }

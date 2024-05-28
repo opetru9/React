@@ -7,10 +7,10 @@ import rolleProducts from "./Products/Rolle";
 import tempuraProducts from "./Products/Tempura";
 import Error from "./Components/Error/Error";
 import AboutUS from "./Layers/MainPages/AboutUs/AboutUs";
-import './app.css'
 import OnlyProduct from "./Layers/MainPages/OnlyProduct/OnlyProduct";
 import seturiProducts from "./Products/Seturi";
 import bauturiProducts from "./Products/Bauturi";
+import './app.css'
 
 const App = () => {
   return (

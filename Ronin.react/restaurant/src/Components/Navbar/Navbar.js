@@ -18,7 +18,6 @@ const Navbar = () => {
 
   useEffect(() => {
     document.addEventListener("scroll", () => {
-
       let scroll = document.documentElement.scrollTop;
 
       if (scroll === 0) {

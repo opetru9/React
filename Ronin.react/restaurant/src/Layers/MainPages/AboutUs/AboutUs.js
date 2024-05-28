@@ -1,10 +1,11 @@
-import { ThemeProvider,createTheme,Container, Grid, Typography, responsiveFontSizes } from "@mui/material";
+import { ThemeProvider,createTheme,Container, Grid, Typography } from "@mui/material";
 import Slider from "react-slick";
 import img1 from '../../../img/aboutUs/i1.jpg'
 import img2 from '../../../img/aboutUs/i2.jpg'
 import img3 from '../../../img/aboutUs/i3.jpg'
 import img4 from '../../../img/aboutUs/i4.jpg'
 import './aboutUs.css'
+import BackOnTop from "../../../Components/BackOnTop/BackOnTop";
 
 const AboutUS = () => {
     const aboutUsTheme = createTheme({
@@ -117,6 +118,7 @@ const AboutUS = () => {
             </Container>
           </section>
         </ThemeProvider>
+        <BackOnTop/>
       </main>
     );
 }
